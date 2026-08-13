@@ -1,0 +1,256 @@
+inde<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renu Toys - Fun for Every Child</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                🧸 Renu Toys
+            </div>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button class="cart-button" onclick="showCart()">
+                        🛒 Cart <span id="cartCount">0</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">🎈 Fun • Learning • Happiness</span>
+            <h1>Make Every Day<br><span>More Playful!</span></h1>
+            <p>
+                Discover exciting toys for kids of all ages.
+                Quality toys, joyful moments and endless fun!
+            </p>
+            <a href="#products" class="btn">Shop Toys 🎁</a>
+        </div>
+
+        <div class="hero-toy">
+            🧸
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <p class="section-subtitle">Find something special for every little one</p>
+
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="category-icon">🧸</div>
+                <h3>Soft Toys</h3>
+                <p>Cute and cuddly friends</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🚗</div>
+                <h3>Cars & Vehicles</h3>
+                <p>Exciting toys for little racers</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🧩</div>
+                <h3>Puzzles</h3>
+                <p>Fun learning and creativity</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🎨</div>
+                <h3>Creative Toys</h3>
+                <p>Let their imagination grow</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <h2>Our Popular Toys</h2>
+        <p class="section-subtitle">Something fun for everyone!</p>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-image pink">🧸</div>
+                <div class="product-info">
+                    <span class="product-category">Soft Toy</span>
+                    <h3>Cuddly Teddy Bear</h3>
+                    <p>Super soft and perfect for cuddles.</p>
+                    <div class="product-bottom">
+                        <strong>₹499</strong>
+                        <button onclick="addToCart('Cuddly Teddy Bear', 499)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image blue">🚗</div>
+                <div class="product-info">
+                    <span class="product-category">Vehicle</span>
+                    <h3>Speed Racing Car</h3>
+                    <p>A colorful racing car for little drivers.</p>
+                    <div class="product-bottom">
+                        <strong>₹299</strong>
+                        <button onclick="addToCart('Speed Racing Car', 299)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image yellow">🧩</div>
+                <div class="product-info">
+                    <span class="product-category">Puzzle</span>
+                    <h3>Kids Puzzle Set</h3>
+                    <p>Colorful puzzles for fun learning.</p>
+                    <div class="product-bottom">
+                        <strong>₹249</strong>
+                        <button onclick="addToCart('Kids Puzzle Set', 249)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image green">🤖</div>
+                <div class="product-info">
+                    <span class="product-category">Electronic Toy</span>
+                    <h3>Fun Robot</h3>
+                    <p>A playful robot to entertain children.</p>
+                    <div class="product-bottom">
+                        <strong>₹799</strong>
+                        <button onclick="addToCart('Fun Robot', 799)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image purple">🎨</div>
+                <div class="product-info">
+                    <span class="product-category">Creative</span>
+                    <h3>Art & Craft Kit</h3>
+                    <p>A creative kit for little artists.</p>
+                    <div class="product-bottom">
+                        <strong>₹399</strong>
+                        <button onclick="addToCart('Art & Craft Kit', 399)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image orange">⚽</div>
+                <div class="product-info">
+                    <span class="product-category">Outdoor</span>
+                    <h3>Kids Football</h3>
+                    <p>Enjoy active outdoor play with friends.</p>
+                    <div class="product-bottom">
+                        <strong>₹349</strong>
+                        <button onclick="addToCart('Kids Football', 349)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features">
+        <h2>Why Choose Renu Toys?</h2>
+
+        <div class="feature-grid">
+            <div class="feature">
+                <div>⭐</div>
+                <h3>Quality Toys</h3>
+                <p>We aim to provide fun and quality products.</p>
+            </div>
+
+            <div class="feature">
+                <div>💝</div>
+                <h3>Made with Care</h3>
+                <p>Every toy is selected with children in mind.</p>
+            </div>
+
+            <div class="feature">
+                <div>🎉</div>
+                <h3>Lots of Fun</h3>
+                <p>Bring smiles and happiness to every child.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>🧸 Renu Toys</h3>
+                <p>Fun toys for happy childhoods.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📞 +91 98281 25366</p>
+                <p>📍 Parbatsar, Rajasthan</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 Renu Toys. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Popup -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-box">
+            <button class="close-cart" onclick="closeCart()">×</button>
+            <h2>🛒 Your Cart</h2>
+
+            <div id="cartItems">
+                <p class="empty-cart">Your cart is empty.</p>
+            </div>
+
+            <div class="cart-total">
+                Total: ₹<span id="cartTotal">0</span>
+            </div>
+
+            <button class="checkout-btn" onclick="checkout()">
+                Order Now
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>x.html
