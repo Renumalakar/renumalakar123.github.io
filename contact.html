@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Renu Toys</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🧸 Renu Toys</div>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="page-hero contact-hero">
+        <div>
+            <span>📞 We'd Love to Hear From You</span>
+            <h1>Contact Us</h1>
+            <p>Have a question? Get in touch with Renu Toys.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+
+        <div class="contact-info">
+            <span class="small-heading">GET IN TOUCH</span>
+            <h2>Let's Talk!</h2>
+
+            <p>
+                For toy enquiries, orders or any other information,
+                please contact us using the details below.
+            </p>
+
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <div>
+                    <span>Phone</span>
+                    <a href="tel:+919828125366">+91 98281 25366</a>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <span>Address</span>
+                    <strong>Parbatsar, Rajasthan</strong>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">🕐</div>
+                <div>
+                    <span>Business</span>
+                    <strong>Established since 1992</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm" onsubmit="submitForm(event)">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn submit-btn">
+                    Send Message 💌
+                </button>
+
+                <p id="formMessage"></p>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Location -->
+    <section class="location-section">
+        <h2>📍 Find Us</h2>
+        <p>Parbatsar, Rajasthan</p>
+
+        <div class="map-placeholder">
+            <span>📍</span>
+            <h3>Renu Toys</h3>
+            <p>Parbatsar, Rajasthan</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>🧸 Renu Toys</h3>
+                <p>Fun toys for happy childhoods.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📞 +91 98281 25366</p>
+                <p>📍 Parbatsar, Rajasthan</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 Renu Toys. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
